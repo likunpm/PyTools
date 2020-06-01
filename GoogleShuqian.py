@@ -22,7 +22,7 @@ class GoogleShuqian():
         self.res={}
     def GetShuqian(self):
         ShuQian=json.load(open(file)) #获取书签
-        sq=pd.DataFrame(shuqian['roots']['bookmark_bar']['children'])
+        sq=pd.DataFrame(ShuQian['roots']['bookmark_bar']['children'])
         
         NoCate=sq[sq['type']=='url'] #没有分类的
         NoCate['date_added']=NoCate['date_added'].apply(lambda x:getFiletime(int(x)))
