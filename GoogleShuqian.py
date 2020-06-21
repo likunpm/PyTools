@@ -2,8 +2,9 @@ import json
 import pandas as pd
 import datetime
 
-file="/Users/likun/Library/Application Support/Google/Chrome/Default/Bookmarks"
-fileto='/Users/likun/Desktop/bookmark.xlsx'
+#{yours} 换成自己的电脑用户名
+file="/Users/{yours}/Library/Application Support/Google/Chrome/Default/Bookmarks"
+fileto='/Users/{yours}/Desktop/bookmark.xlsx'
 
 #谷歌时间戳转化
 def getFiletime(dt):
